@@ -27,6 +27,7 @@ from evaluate import evaluate_mAP
 
 
 def main():
+    torch.cuda.empty_cache()
     configs = parse_train_configs()
 
     # Re-produce results
